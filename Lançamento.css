@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.Logo_da_Ford img {
+    width: 80%
+}
+
+.Navegamento {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    width: 100%;
+    margin: 0 11% 0 0;
+}
+
+.Navegamento a {
+    font-family: "DM Sans", sans-serif;
+    text-decoration: none;
+    color: #1b357e;
+}
+
+main {
+    flex: 1;
+    /* ocupa todo o espaço disponível */
+    display: flex;
+    align-items: center;
+    /* opcional: centraliza verticalmente */
+    justify-content: center;
+    flex-direction: column;
+}
+
+.descricao a {
+    color: #1b357e;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Rodape {
+    background-color: #1b357e;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    /*separa a esquerda e direita*/
+    align-items: center;
+
+    padding: 10px 30px;
+}
+
+/*lado esquerdo*/
+.RedesSociais {
+    font-family: "DM Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.RedesSociais p {
+    font-size: 19px;
+    margin-right: 10px;
+}
+
+/*ícones*/
+.RedesSociais img {
+    width: 30px;
+    height: auto;
+}
+
+/*logo da ford do lado direito*/
+.LogoRodape img {
+    width: 70px;
+}
+
+.Carros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.Carro1,
+.Carro2,
+.Carro3 {
+
+    width: 100px;
+    text-align: center;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+.Carro1,
+.Carro2,
+.Carro3 {
+    width: 100%;
+}
+
+.Carro1,
+.Carro2,
+.Carro3 p {
+    font-size: 14px;
+    margin: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Carro1:hover,
+.Carro2:hover,
+.Carro3:hover {
+    transform: translateY(-25px);
+    transition: all 0.12s ease;
+    /* TEMPO DE SUBIDA DA ANIMAÇÃO */
+}
+
+.botaoComparar {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #1b357e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.botaoComparar:hover {
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+    /* TEMPO DE SUBIDA DA ANIMAÇÃO */
+}
+
+/* ÍCONE I AO LADO DO CARRO*/
+.icone-info {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* PREÇO */
+.preco {
+    display: block;
+    margin-top: 5px;
+    font-size: 13px;
+    color: #1b357e;
+    font-weight: bold;
+}
+
+.copyright {
+    font-family: "DM Sans", sans-serif;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin: 0 11% 0 0;
+
+}
+
+.video {
+    display: block;
+    margin-bottom: 100px;
+    width: 1120.8px;
+    height: 630.4px;
+}
+
+@media (max-width: 1150px) {
+    .video {
+        width: 90%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .Navegamento {
+        margin-right: 0;
+        gap: 15px;
+    }
+
+    .video {
+        width: 95%;          
+        height: auto;        
+        aspect-ratio: 16 / 9; 
+        margin-top: 50px;    
+        margin-bottom: 30px; 
+    }
+
+
+    .Carros {
+        flex-direction: column;
+        /* Empilha os carros */
+        align-items: center;
+        gap: 30px;
+    }
+
+    .Carro1,.Carro2,.Carro3 {
+        width: 90%;
+        /* Ocupa 90% da largura da tela */
+        max-width: 320px;
+    }
+
+    .Rodape {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .RedesSociais {
+        flex-direction: column;
+    }
+
+    .copyright {
+        margin: 0;
+        order: 3;
+        /* Coloca o texto por último no empilhamento */
+    }
+      
+}
+
+@media (max-width: 600px) {
+    .Rodape {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 30px 10px;
+    }
+
+    .RedesSociais {
+        flex-direction: column;
+    }
+
+    .copyright {
+        margin: 15px 0 0 0;
+        flex-direction: column;
+        gap: 5px;
+        font-size: 13px;
+    }
+
+    .Logo_da_Ford img {
+        width: 120px;
+    }
+}

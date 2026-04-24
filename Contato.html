@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ford|Contato</title>
+    <link rel="stylesheet" href="Contato.css">
+    <link rel="icon" href="img/large-ford-logo-0.png" type="image/png">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <section class="Logo_da_Ford">
+            <a href="Home.html"><img class="logo-ford-256" src="img/logo-ford-256.png" alt="Logo da Ford"></a>
+        </section>
+
+
+        <nav class="Navegamento">
+            <a href="Home.html">Home</a>
+            <a href="Lançamento.html">Lançamento</a>
+            <a href="Contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+
+        <div class="imagem"><!-- IMAGEM -->
+            <img src="img/xls 2.2 diesel.jpg" alt="XLS 2.2 Diesel 4X4 AT 2022">
+        </div>
+
+
+        <form class="formulario"> <!-- FORMULÁRIO -->
+            <h2>Sobre Você</h2>
+
+            <input type="text" placeholder="Nome" required pattern="[A-Za-zÀ-ÿ\s]+" 
+                title="O nome deve conter apenas letras."> <!--Essa gosma vai Permitir apenas letras (A-Z), letras com acentos (À-ÿ) e espaços-->
+            <input type="text" placeholder="Sobrenome" required pattern="[A-Za-zÀ-ÿ\s]+"
+                title="O sobrenome deve conter apenas letras.">
+            <input type="email" placeholder="E-mail" required>
+            <input type="text" placeholder="CPF" inputmode="numeric" pattern="\d*" title="Digite apenas números">
+            <input type="text" placeholder="Telefone" inputmode="numeric" pattern="\d*" title="Digite apenas números">
+
+            <select required>
+                <option value="">Tipo de contato</option>
+                <option>Elogio</option>
+                <option>Reclamação</option>
+                <option>Sugestão</option>
+               
+            </select>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+    </main>
+   <footer class="Rodape">
+        <div class="RedesSociais">
+            <p>
+                Redes sociais:
+            </p>
+
+            <a href="https://www.facebook.com/FordBrasil" target="_blank">
+                <img src="img/facebook-50.png" alt="Logo do faceboobk da Ford" width=50; height="auto">
+            </a>
+            <a href="https://www.youtube.com/@fordbrasil" target="_blank">
+                <img src="img/youtube-squared-50.png" alt="Youtube da Ford Brasil" width=50; height="auto">
+            </a>
+            <a href="https://www.instagram.com/fordbrasil/" target="_blank">
+                <img src="img/instagram-logo-50.png" alt="instagram da Ford Brasil" width=50; height="auto">
+            </a>
+
+        </div>
+        <p class="copyright">
+            ©️ 2026 Ford Brasil | Viva o Novo. Todos os direitos reservados.
+        </p>
+        <div class="LogoRodape">
+            <img src="img/ford-96.png" alt="Logo da Ford Canto">
+        </div>
+    </footer>
+
+</body>
+
+</html>
