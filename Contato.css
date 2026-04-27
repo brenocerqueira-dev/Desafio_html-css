@@ -136,7 +136,7 @@ table {
     border-spacing: 0;
 }
 body {
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -202,8 +202,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    height: 87vh;
+    flex: 1;
 }
 
 /* IMAGEM */
