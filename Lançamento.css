@@ -220,6 +220,7 @@ main {
 
 .Carros {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 40px;
@@ -230,7 +231,7 @@ main {
 .Carro2,
 .Carro3 {
 
-    width: 100px;
+    width: 400px;
     text-align: center;
     background: white;
     padding: 15px;
@@ -239,12 +240,6 @@ main {
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
-}
-
-.Carro1,
-.Carro2,
-.Carro3 {
-    width: 100%;
 }
 
 .Carro1,
@@ -350,6 +345,7 @@ main {
         aspect-ratio: 16 / 9;
         margin-bottom: 30px;
     }
+
 }
 
 @media (max-width: 768px) {
